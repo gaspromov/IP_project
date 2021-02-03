@@ -26,7 +26,7 @@ SECRET_KEY = '2lm2a!yq(l=%+78xf51n8zxt!8jii8c*_f^mfcv=(b(@owbxqu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sale-of-electronic.std-715.ist.mospolytech.ru']
 
 
 # Application definition
