@@ -44,10 +44,11 @@ class Product(models.Model):
 
 
 class Order(models.Model):
-    number = models.IntegerField()
+    number = models.CharField(max_length=6)
     product = models.ForeignKey('Product', on_delete= models.PROTECT)
     buyer = models.ForeignKey('Buyer', on_delete= models.PROTECT)
     date = models.DateTimeField()
+    status = models.CharField(max_length=20)
 
     def __str__(self):
         return self.number
